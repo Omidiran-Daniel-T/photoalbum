@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>First Project Improved</title>
+</head>
+<style>
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    #navbar {
+        background-color: rgb(52, 58, 64);
+        width: 100%;
+        height: 55px;
+        margin-top: 0px;
+    }
+    
+    #navbar p {
+        font-size: 19px;
+        font-weight: bolder;
+        color: white;
+        position: relative;
+        left: 200px;
+        top: -30px;
+    }
+    
+    #navbar img {
+        position: relative;
+        left: 160px;
+        top: 15px;
+    }
+    
+    #content1 {
+        background-color: rgb(253, 252, 252);
+        height: 325px;
+        text-align: center;
+        border: 1px solid white;
+        padding-top: 5%;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    
+    #content1 p {
+        font-size: 120%;
+        font-weight: lighter;
+        color: rgb(143, 140, 140);
+        margin-top: -15px;
+        line-height: 30px;
+        position: relative;
+        left: 10px;
+    }
+    
+    #content1 h2 {
+        font-size: 37px;
+        font-weight: lighter;
+        color: rgb(68, 67, 67);
+    }
+    
+    #content1 button {
+        color: white;
+        font-weight: 500;
+        font-size: 15px;
+        height: 38px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 0px;
+    }
+    
+    #btn1 {
+        background-color: rgb(0, 123, 255);
+        border-radius: 5px;
+    }
+    
+    #btn1:hover {
+        background-color: rgb(31, 120, 192);
+    }
+    
+    #btn2 {
+        background-color: rgb(107, 107, 107);
+        padding: 0px;
+        border-radius: 5px;
+    }
+    
+    #btn2:hover {
+        background-color: rgb(85, 84, 84);
+    }
+    
+    #button2 {
+        background-color: rgb(211, 211, 211);
+        border-radius: 5px;
+    }
+    
+    #content2 {
+        background-color: rgb(243, 243, 243);
+        width: 100%;
+        /*height: 180vh;*/
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: flex;
+    }
+    
+    #album {
+        width: 90%;
+        margin: auto;
+        /*background-color: red;*/
+        /*height: 175vh;*/
+        padding-top: 0vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        margin-top: 25px;
+        margin-bottom: 80px;
+    }
+    
+    .images {
+        border: 1px solid rgb(207, 205, 205);
+        position: relative;
+        min-width: 350px;
+        min-width: 350px;
+        margin-left: 0vh;
+        margin-top: 25px;
+        height: 380px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    
+    .top {
+        width: 100%;
+        height: 60%;
+        background-color: rgb(81, 87, 97);
+        border-radius: 4px;
+    }
+    
+    .top span {
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 220px;
+        margin-left: 100px;
+    }
+    
+    .buttom {
+        margin-top: -10px;
+        width: 100%;
+        height: 40%;
+        background-color: rgb(253, 252, 252);
+        position: relative;
+        text-align: left;
+    }
+    
+    .buttom p {
+        margin-top: -10px;
+        padding-top: 20px;
+        margin-left: 5%;
+        margin-right: 10%;
+        /*background-color: chartreuse;*/
+        line-height: 22px;
+        font-size: 105%;
+        color: rgb(54, 54, 54);
+        font-weight: 100;
+    }
+    
+    #view {
+        position: relative;
+        bottom: -30px;
+        left: 5%;
+        text-decoration: none;
+        font-size: 14px;
+        color: rgb(114, 114, 114);
+        border: 1px solid rgb(109, 108, 108);
+        border-radius: 3px;
+        padding: 5px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    
+    #view:hover,
+    #edit:hover {
+        background-color: rgb(81, 87, 97);
+        color: white;
+    }
+    
+    #edit {
+        position: relative;
+        bottom: -30px;
+        left: 3.37%;
+        text-decoration: none;
+        color: rgb(114, 113, 113);
+        border: 1px solid rgb(109, 108, 108);
+        border-radius: 3px;
+        padding: 5px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    
+    #time {
+        float: right;
+        position: relative;
+        right: 5%;
+        bottom: -20px;
+        text-decoration: none;
+        color: rgb(138, 135, 135);
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    
+    #content3 {
+        margin-top: 50px;
+        height: 20vh;
+        width: 100%;
+        font-size: 100%;
+    }
+    
+    #foot {
+        width: 90%;
+        margin: auto;
+        margin-left: 8%;
+        line-height: 180%;
+        color: rgb(128, 126, 126);
+    }
+    
+    #footnote {
+        float: left;
+    }
+    
+    #footnote a {
+        text-decoration: none;
+        color: rgb(17, 143, 202);
+    }
+    
+    #footnote a:hover,
+    #btt:hover {
+        color: rgb(4, 114, 165);
+        text-decoration: underline;
+    }
+    
+    #btt {
+        float: right;
+        color: rgb(17, 143, 202);
+        text-decoration: none;
+        margin-top: 1%;
+        margin-right: 7%;
+    }
+    
+    #image1 {
+        background-image: url(img1.jpg);
+    }
+    
+    #image2 {
+        background-image: url(img1.jpg);
+    }
+    
+    #image3 {
+        background-image: url(img1.jpg);
+    }
+    
+    #image4 {
+        background-image: url(img1.jpg);
+    }
+    
+    #image5 {
+        background-image: url(img1.jpg);
+    }
+    
+    #image6 {
+        background-image: url(img1.jpg);
+    }
+    
+    #image7 {
+        background-image: url(img1.jpg);
+    }
+    
+    #image8 {
+        background-image: url(img1.jpg);
+    }
+    
+    #image9 {
+        background-image: url(img1.jpg);
+    }
+</style>
+
+<body>
+    <div id="navbar">
+        <img id="pagelogo" src="icons8-compact-camera-50.png" alt="icon" height="30px" width="30px">
+        <p>Album</p>
+    </div>
+
+    <div id="content1">
+        <h2>Daniel's Album</h2>
+        <p>
+            Something short and leading about the collection below—its contents,<br> the creator, etc. Make it short and sweet, but not too short so folks don't <br> simply skip over it entirely.
+        </p>
+        <button id="btn1">Main call To Action</button>
+        <button id="btn2">Secondary Action</button>
+    </div>
+
+    <div id="content2">
+        <div id="album">
+            <div class="images">
+                <div class="top" id="image1">
+                    <span>Thumbnail</span>
+                </div>
+                <div class="buttom" style="font-size: 14px;">
+                    <p>
+                        This is a wider card with supporting text <br> below as a natural lead-in to additional <br> content. This content is a little bit longer.
+                    </p>
+                    <a id="view" href="#">View</a>
+                    <a id="edit" href="#">Edit</a>
+                    <label id="time">9 mins</label>
+
+                </div>
+            </div>
+
+            <div class="images">
+                <div class="top" id="image2">
+                    <span>Thumbnail</span>
+                </div>
+                <div class="buttom" style="font-size: 14px;">
+                    <p>
+                        This is a wider card with supporting text <br> below as a natural lead-in to additional <br> content. This content is a little bit longer.
+                    </p>
+                    <a id="view" href="#">View</a>
+                    <a id="edit" href="#">Edit</a>
+                    <label id="time">9 mins</label>
+
+                </div>
+            </div>
+
+            <div class="images">
+                <div class="top" id="image3">
+                    <span>Thumbnail</span>
+                </div>
+                <div class="buttom" style="font-size: 14px;">
+                    <p>
+                        This is a wider card with supporting text <br> below as a natural lead-in to additional <br> content. This content is a little bit longer.
+                    </p>
+                    <a id="view" href="#">View</a>
+                    <a id="edit" href="#">Edit</a>
+                    <label id="time">9 mins</label>
+
+                </div>
+            </div>
+            <div class="images">
+                <div class="top" id="image4">
+                    <span>Thumbnail</span>
+                </div>
+                <div class="buttom" style="font-size: 14px;">
+                    <p>
+                        This is a wider card with supporting text <br> below as a natural lead-in to additional <br> content. This content is a little bit longer.
+                    </p>
+                    <a id="view" href="#">View</a>
+                    <a id="edit" href="#">Edit</a>
+                    <label id="time">9 mins</label>
+
+                </div>
+            </div>
+            <div class="images">
+                <div class="top" id="image5">
+                    <span>Thumbnail</span>
+                </div>
+                <div class="buttom" style="font-size: 14px;">
+                    <p>
+                        This is a wider card with supporting text <br> below as a natural lead-in to additional <br> content. This content is a little bit longer.
+                    </p>
+                    <a id="view" href="#">View</a>
+                    <a id="edit" href="#">Edit</a>
+                    <label id="time">9 mins</label>
+
+                </div>
+            </div>
+
+            <div class="images">
+                <div class="top" id="image6">
+                    <span>Thumbnail</span>
+                </div>
+                <div class="buttom" style="font-size: 14px;">
+                    <p>
+                        This is a wider card with supporting text <br> below as a natural lead-in to additional <br> content. This content is a little bit longer.
+                    </p>
+                    <a id="view" href="#">View</a>
+                    <a id="edit" href="#">Edit</a>
+                    <label id="time">9 mins</label>
+
+                </div>
+            </div>
+            <div class="images">
+                <div class="top" id="image7">
+                    <span>Thumbnail</span>
+                </div>
+                <div class="buttom" style="font-size: 14px;">
+                    <p>
+                        This is a wider card with supporting text <br> below as a natural lead-in to additional <br> content. This content is a little bit longer.
+                    </p>
+                    <a id="view" href="#">View</a>
+                    <a id="edit" href="#">Edit</a>
+                    <label id="time">9 mins</label>
+
+                </div>
+            </div>
+            <div class="images">
+                <div class="top" id="image8">
+                    <span>Thumbnail</span>
+                </div>
+                <div class="buttom" style="font-size: 14px;">
+                    <p>
+                        This is a wider card with supporting text <br> below as a natural lead-in to additional <br> content. This content is a little bit longer.
+                    </p>
+                    <a id="view" href="#">View</a>
+                    <a id="edit" href="#">Edit</a>
+                    <label id="time">9 mins</label>
+
+                </div>
+            </div>
+            <div class="images">
+                <div class="top" id="image9">
+                    <span>Thumbnail</span>
+                </div>
+                <div class="buttom" style="font-size: 14px;">
+                    <p>
+                        This is a wider card with supporting text <br> below as a natural lead-in to additional <br> content. This content is a little bit longer.
+                    </p>
+                    <a id="view" href="#">View</a>
+                    <a id="edit" href="#">Edit</a>
+                    <label id="time">9 mins</label>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="content3">
+        <div id="foot">
+            <p id="footnote">
+                Album example is © Bootstrap, but please download and customize it for yourself! <br> New to Bootstrap? <a href="#">Visit the homepage</a> or read our <a href="#">getting started guide</a>.
+            </p>
+            <a id="btt" href="firstProject2.html">Back to top</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
